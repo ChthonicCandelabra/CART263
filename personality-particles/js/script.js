@@ -27,9 +27,9 @@ function mousePressed() {
   turn++; // Increases the turn counter by 1 per click.
   print(turn);
 
-  for (let i = 0; i < particle.length; i++) {
-    particle[i].clicked(mouseX, mouseY);
-  }
+  // for (let i = 0; i < particle.length; i++) {
+  //   particle[i].clicked(mouseX, mouseY);
+  // }
 }
 
 function draw() {
@@ -40,13 +40,13 @@ function draw() {
     background(82, 72, 76);
   }
 
-  for (let i = 0; i < 1; i++) { // sets the max amount of petals to generate
+  for (let i = 0; i < 3; i++) { // sets the max amount of petals to generate
     particle.push(new Petal(mouseX, mouseY, 100));
    
     particle[i].display(); // calls the particle speficic functions
     particle[i].move(); //^
-    particle[i].tooFastTooSoon();
-    particle[i].decay(); // 
+    particle[i].tooFastTooSoon(); //
+   // particle[i].decay(); // 
     
   }
 
@@ -84,12 +84,12 @@ class Petal { // creates an object class for petals
       // endShape();
       }
 
-      clicked(ex, why) {
-        let range = dist(ex, why, this.x, this.y);
-        if (range < this.r) {
+      // clicked(ex, why) {
+      //   let range = dist(ex, why, this.x, this.y);
+      //   if (range < this.r) {
           
-        }
-      }
+      //   }
+      // }
 
       move() {
         this.x = this.x + lerp(random(-50, -45), random(45, 50), 0.5); // makes the particles shake with lerp
@@ -111,4 +111,6 @@ class Petal { // creates an object class for petals
           }
         }
       }
+
+
     }
