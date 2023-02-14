@@ -2,13 +2,8 @@
 
 ## THEME: Breaking up with a lover
 
-Start with pastel pink
-Progress to bright blood red(?) and fade into dark purple or black. Maybe pale blue to imply a sense of cold.
+Circles representing petals move in a circle as they decay into bright red, eventually dissapearing as the background turns black.
 
-Thinking of the "loves me, loves me not" saying. Falling flower petals? Wilting rose? Turning to dust or burning or both?
+Mouse detection was attempted but the moving circle made it a much more difficult task.
 
-Should the user be able to pick off petals with the mouse?
-
-Sad music? Noises? Crying sounds? Vocals?
-
-Rose petals wilt as the user picks them off?
+Ideally, particles would decay one at a time rather than all at once.
